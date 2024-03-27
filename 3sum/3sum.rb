@@ -50,7 +50,7 @@ def triplet_sum(numbers:)
     end
 
     if i < n - 1
-      i += 1 while numbers[i] == numbers[i + 1]
+      i += 1 while i < n - 1 && numbers[i] == numbers[i + 1]
     end
 
     i += 1
